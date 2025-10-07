@@ -1,17 +1,24 @@
-# Artfolio
+# 🎨 Artfolio - Sanat Paylaşım Uygulaması
+Artfolio, sanatseverlerin eserlerini paylaşabileceği ve keşfedebileceği bir Android uygulamasıdır.
+<img width="6735" height="2913" alt="Final" src="https://github.com/user-attachments/assets/bc1175b1-6a5d-446f-8660-5bcb47bcef5e" />
 
-An Android application for art enthusiasts to share and discover artwork.
+## 🚀 Başlangıç
+- Android Studio
+- Android SDK
+- Firebase Entegrasyonu
 
-## Features
+## 🖼️ Özellikler
+- Kullanıcı kaydı ve girişi
+- Sanat eserlerini yükleme
+- Sanat galerisi taraması
+- Sanat eseri detaylarını görüntüleme
 
-- User authentication (sign up/in)
-- Upload artwork with images
-- Browse artwork gallery
-- View detailed artwork information
+## 🧩 Mimari
+Bu proje, MVVM (Model-View-ViewModel) mimarisini takip eder ve aşağıdaki bileşenleri içerir:
 
-## Architecture
-
-This project follows the MVVM (Model-View-ViewModel) architecture pattern with a clean separation of concerns:
+- Model: Veri sınıfları ve iş mantığı.
+- View: Kullanıcı arayüzü bileşenleri.
+- ViewModel: Veri yönetimi ve UI ile etkileşim.
 
 ```
 com.ender.artfolio
@@ -27,30 +34,15 @@ com.ender.artfolio
 └── util            # Utility classes
 ```
 
-## Security
-
-Sensitive information such as Firebase configuration is excluded from version control through `.gitignore`.
-
-## Setup
-
-1. Clone the repository
-2. Open in Android Studio
-3. Add your Firebase configuration file (`google-services.json`) to the `app/` directory
-4. Add your Firebase API key to `local.properties`:
-   ```
-   FIREBASE_API_KEY=your_api_key_here
-   ```
-5. Build and run the project
-
-## Dependencies
-
+## 🛠️ Teknolojiler
+- Kotlin
+- XML Components (Navigation, ViewModel)
 - Firebase Authentication
 - Firebase Firestore
 - Firebase Storage
-- Picasso (for image loading)
-- Android Jetpack components (Navigation, ViewModel, etc.)
-
-## Firebase Kurulumu (Turkish - Firebase Setup)
+- Picasso (Resim yükleme ve gösterme)
+  
+## 🔥 Firebase Kurulumu
 
 Firebase yapılandırması için aşağıdaki adımları izleyin:
 
@@ -63,10 +55,5 @@ Firebase yapılandırması için aşağıdaki adımları izleyin:
 
 Firebase yapılandırması, hassas bilgilerin (API anahtarları, vb.) kaynak koduna doğrudan yazılmasını önlemek için yapılmıştır. Tüm gizli bilgiler `.gitignore` dosyası tarafından dışlanmıştır ve bu nedenle GitHub'a yüklenmez.
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a pull request
+## 📄 Lisans
+Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına bakınız.
